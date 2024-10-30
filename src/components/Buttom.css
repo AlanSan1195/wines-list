@@ -1,0 +1,22 @@
+
+.desactive {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 0.875rem; /* Tailwind 'text-sm' */
+    font-weight: bold;
+    width: 5rem; /* Tailwind 'w-20' */
+    height: 2.5rem; /* Tailwind 'h-10' */
+    border-radius: 0.5rem; /* Tailwind 'rounded-lg' */
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #eab308; /* Tailwind 'text-yellow-500' */
+    text-align: center;
+    font-size: 0.875rem; /* Tailwind 'text-sm' */
+    font-weight: bold;
+    width: 5rem; /* Tailwind 'w-20' */
+    height: 2.5rem; /* Tailwind 'h-10' */
+    border-radius: 0.5rem; /* Tailwind 'rounded-lg' */
+}

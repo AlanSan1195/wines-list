@@ -1,9 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import ButtomMaridage from "../components/ButtomMaridage.jsx";
+
+
+
+
 
 const wines = await getCollection("wines");
 console.log(wines);
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -39,6 +45,7 @@ console.log(wines);
                   <p class=" font-bold flex justify-end mr-8">{price}</p>
                 </div>
               </article>
+			
             );
           })
         }
@@ -46,3 +53,4 @@ console.log(wines);
     </div>
   </section>
 </Layout>
+<ButtomMaridage/>
