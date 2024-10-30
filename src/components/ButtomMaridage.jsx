@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./Buttom.css";
 
 export default function ButtomMaridage({ vino, price}) {
-  const [enable, setEnable] = useState(false);
-  const classEnable = enable ? "active" : "desactive";
+  const [enable, setEnable] = useState(true);
+  const classEnable = enable ? "desactive" : "active";
   const handelClick = ( )=>{
     console.log(enable)
     setEnable(!enable)
