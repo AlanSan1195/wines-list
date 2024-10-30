@@ -2,25 +2,22 @@
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import ButtomMaridage from "../components/ButtomMaridage.jsx";
-
-
-
-
+import WineCard from "../components/WineCard.jsx";
+import type { loadRenderers } from "astro:container";
 
 const wines = await getCollection("wines");
 console.log(wines);
-
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="flex justify-center mt-8">
     <div class="">
-      <h1 class="text-center text-7xl font-bold">
+      <h1 class="text-center text-6xl font-bold">
         Especials <span class="block"> 🍷 Wines</span>
       </h1>
     </div>
   </main>
-  <section aria-label="Vinos especiales del mes">
+  <section aria-label="Vinos especiales del mes" class="mt-36">
     <div class="px-4 mx-auto max-w-screen-xl mt-12">
       <div class="grid gap-6 md:grid-cols-2">
         {
@@ -29,23 +26,14 @@ console.log(wines);
             const { title, description, price, variedad, graduation, image } =
               data;
             return (
-              <article class=" flex justify-center items-center">
-                <div class="">
-                  <img
-                    src={`/${image}`}
-                    alt={title}
-                    class=" h-full w-full object-cover"
-                  />
-                </div>
-                <div class="  ">
-                  <h2 class=" font-bold text-3xl">{title}</h2>
-                  <p class=" opacity-90">{description}</p>
-                  <p class=" font-semibold">{variedad}</p>
-                  <p class ="font-semibold">{graduation}</p>
-                  <p class=" font-bold flex justify-end mr-8">{price}</p>
-                </div>
-              </article>
-			
+              <WineCard client:load
+                title={title}
+                description={description}
+                price={price}
+                variedad={variedad}
+                graduation={graduation}
+                image={image}
+              />
             );
           })
         }
@@ -53,4 +41,3 @@ console.log(wines);
     </div>
   </section>
 </Layout>
-<ButtomMaridage/>

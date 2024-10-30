@@ -1,22 +1,13 @@
-
 .desactive {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    font-size: 0.875rem; /* Tailwind 'text-sm' */
-    font-weight: bold;
-    width: 5rem; /* Tailwind 'w-20' */
-    height: 2.5rem; /* Tailwind 'h-10' */
-    border-radius: 0.5rem; /* Tailwind 'rounded-lg' */
+  @apply bg-white/20 text-white/80 text-xs font-bold w-auto h-8 p-2 rounded-lg;
 }
 
 .active {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #eab308; /* Tailwind 'text-yellow-500' */
-    text-align: center;
-    font-size: 0.875rem; /* Tailwind 'text-sm' */
-    font-weight: bold;
-    width: 5rem; /* Tailwind 'w-20' */
-    height: 2.5rem; /* Tailwind 'h-10' */
-    border-radius: 0.5rem; /* Tailwind 'rounded-lg' */
+  @apply bg-white/10 text-red-600 text-xs font-bold w-auto  h-8 p-2 rounded-lg;
+}
+img {
+  filter: drop-shadow(15px 15px 10px #0d0d0d);
+}
+a {
+    @apply h-8 w-auto rounded-lg bg-white/10 text-white/80 text-xs font-bold text-center flex p-2 items-center;
 }

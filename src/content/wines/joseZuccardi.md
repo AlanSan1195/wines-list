@@ -1,6 +1,6 @@
 ---
 title: "Jose Zuccardi"
-description: "José Zuccardi también es el nombre de un vino tinto de la Bodega Familia Zuccardi, ubicado en el Valle de Uco, Mendoza, Argentina. Este vino fue creado por Sebastián Zuccardi como un homenaje a su padre, José, y simboliza su pasión y convicción"
+description: "José Zuccardi fue un vino creado por Sebastián Zuccardi como un homenaje a su padre, José, y simboliza su pasión y convicción"
 price: "$4500"
 variedad: "95% Malbec 5% Cabernet Sauvignon"
 graduation: "15%"
