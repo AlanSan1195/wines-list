@@ -1,9 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import ButtomMaridage from "../components/ButtomMaridage.jsx";
 import WineCard from "../components/WineCard.jsx";
-import type { loadRenderers } from "astro:container";
 
 const wines = await getCollection("wines");
 console.log(wines);
@@ -11,30 +9,56 @@ console.log(wines);
 
 <Layout title="Welcome to Astro.">
   <main class="flex justify-center mt-8">
-    <div class="">
-      <h1 class="text-center text-6xl font-bold">
-        Especials <span class="block"> 🍷 Wines</span>
+    <div class="flex flex-col items-center">
+      <img
+        class="h-14 md:h-36 mb-2"
+        src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo-rojo.svg"
+        alt="logo de la matera"
+      />
+      <h1 class="text-center text-2xl font-bold font-serif">
+        Vinos<span class="block">Especiales</span>
       </h1>
+      <div class="flex items-center justify-center">
+        <p
+          class="text-center mx-5 mt-4 text-sm max-w-[800px] font-semibold opacity-80 text-pretty"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque amet
+          corrupti aut, placeat quidem illum vel sunt doloremque.
+        </p>
+      </div>
     </div>
   </main>
-  <section aria-label="Vinos especiales del mes" class="mt-36">
+  <section
+    aria-label="Vinos especiales del mes"
+    class="mt-10 flex flex-col items-center border-b-[1px] border-white/20 pb-10 mb-14 mx-1"
+  >
     <div class="px-4 mx-auto max-w-screen-xl mt-12">
       <div class="grid gap-6 md:grid-cols-2">
         {
-          wines.map((wine) => {
+          wines.map((wine, index) => {
             const { slug, data } = wine;
             const { title, description, price, variedad, graduation, image } =
               data;
+            const isLast = index === wines.length - 1;
+
             return (
-              <WineCard
-                client:load
-                title={title}
-                description={description}
-                price={price}
-                variedad={variedad}
-                graduation={graduation}
-                image={image}
-              />
+              <div
+                class={`transition-transform duration-500 ease-in-out ${
+                  isLast ? "-translate-y-20" : " translate-x-0" 
+                }`}
+
+              >
+                <WineCard
+                  client:load
+                  title={title}
+                  description={description}
+                  price={price}
+                  variedad={variedad}
+                  graduation={graduation}
+                  image={image}
+                  index={slug}
+                />
+              </div>
             );
           })
         }
