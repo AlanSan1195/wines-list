@@ -3,13 +3,13 @@
 }
 
 .active {
-  @apply bg-white/10 text-red-600 text-xs font-bold w-auto  h-8 p-2 rounded-lg;
+  @apply bg-white/10 text-yellow-600/90 text-xs font-bold w-auto  h-8 p-2 rounded-lg;
 }
 /* img {
   filter: drop-shadow(0px 10px 10px #282727a3);
   
 } */
-a {
+.recomendaciones {
     @apply h-8 w-auto rounded-lg bg-white/10 text-white/80 text-xs font-bold text-center flex p-2 items-center;
 }
 .wine-card-div {

@@ -5,6 +5,8 @@ price: "$4500"
 variedad: "95% Malbec 5% Cabernet Sauvignon"
 graduation: "15%"
 image: "imagenes-vinos/joseZuccardi.webp"
+entradas: "Mollejas verdeo"
+carne: "Entraña"
 ---
 
  Es un vino de color rojo intenso, con aromas a frutas rojas y negras, y un toque de vainilla y chocolate. En boca es elegante y equilibrado, con taninos suaves y un final largo y persistente. Ideal para acompañar carnes rojas y pastas con salsas intensas.

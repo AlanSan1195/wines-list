@@ -12,7 +12,7 @@ export default function ButtomMaridage({ vino, price, isActive, select, toggleIs
       <button onClick={toggleIsActive} className={classEnable} >
         Maridage
       </button>
-      <p className="text-xs font-bold">{price}</p>
+      <p className="text-xs font-bold opacity-80">{price}</p>
     </div>
     
   );

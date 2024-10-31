@@ -8,6 +8,8 @@ const wines = defineCollection({
     variedad: z.string(),
     graduation: z.string(),
     image: z.string(),
+    entradas: z.string(),
+    carne: z.string(),
   }),
 });
 
