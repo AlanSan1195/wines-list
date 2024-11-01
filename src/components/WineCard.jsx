@@ -29,7 +29,7 @@ export default function WineCard({
 
   return (
     <article
-      className={`relative flex-col justify-center items-center rounded-lg border-[1px] border-white/30 bg-black transition-transform duration-500 
+      className={`relative flex-col justify-center  items-center rounded-lg border-[1px] border-white/30 bg-black transition-transform duration-500 
      `}
     >
       <div class="  absolute -top-10 left-0 mr-24  ">
@@ -59,7 +59,7 @@ export default function WineCard({
         id="maridage-div"
         className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
           isActive ? "max-h-80" : "max-h-0"
-        } flex flex-col gap-y-2 px-8 mt-9 mb-6 text-pretty`}
+        } flex flex-col  px-8 mt-2 mb-6 text-pretty`}
       >
         <div className="flex gap-x-2 items-center">
           <p className="font-bold opacity-90">Entradas:</p>{" "}

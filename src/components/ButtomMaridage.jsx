@@ -1,9 +1,12 @@
 import "./Buttom.css";
 import { useState } from "react";
-
-export default function ButtomMaridage({ vino, price, entradas, carne }) {
-  const [isActive, setIsActive] = useState(false);
-  const [selected, setSelcted] = useState(false);
+ import { getCollection } from "astro:content";
+ const wines = await getCollection("wines");
+ 
+ export default function ButtomMaridage({ vino, price, entradas, carne }) {
+   const [isActive, setIsActive] = useState(false);
+   const [selected, setSelcted] = useState(false);
+ 
 
   // hacer que cambie si esta activo
   const toggleIsActive = () => {
@@ -23,11 +26,11 @@ export default function ButtomMaridage({ vino, price, entradas, carne }) {
       </div>
       <div
         id="maridage-div"
-        className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-          isActive ? "max-h-80" : "max-h-0"
-        } flex flex-col gap-y-2 px-8 mt-9 mb-6 text-pretty`}
+        className={`transition-max-height duration-500 ease-in-out overflow-hidden w-full  ${
+          isActive ? "max-h-80" : "max-h-0 "
+        } flex flex-col gap-y-2 px-8 mt-9 mb-2  text-pretty`}
       >
-        <div className="flex gap-x-2 items-center">
+        <div className="flex  gap-x-2 items-center">
           <p className="font-bold opacity-90">Entradas:</p>{" "}
           <a className=" recomendaciones opacity-80" href="#">
             {entradas}

@@ -38,47 +38,11 @@ console.log(wines);
       </div>
     </div>
   </main>
-  <section
-    aria-label="Vinos especiales del mes"
-    class="mt-10 flex flex-col items-center border-b-[1px] border-white/20 pb-10 mb-14 mx-1 "
-  >
-    <Slider client:load />
-  </section>
+  <Slider client:load /> 
 
-  <!-- <div class="relative px-4 mx-auto max-w-screen-xl mt-12">
-     
-       
-          {
-            wines.map((wine) => {
-              const { slug, data } = wine;
-              const {
-                title,
-                description,
-                price,
-                variedad,
-                graduation,
-                image,
-                entradas,
-                carne,
-              } = data;
 
-              return (
-                <WineCard
-                  client:load
-                  index={slug}
-                  title={title}
-                  description={description}
-                  price={price}
-                  variedad={variedad}
-                  graduation={graduation}
-                  image={image}
-                  entradas={entradas}
-                  carne={carne}
-                />
-              );
-            })
-          }
-        
 
-    </div> -->
+
+  
+
 </Layout>
