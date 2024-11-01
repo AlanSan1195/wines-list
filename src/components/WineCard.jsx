@@ -13,7 +13,7 @@ export default function WineCard({
   image,
   index,
   entradas,
-  carne
+  carne,
 }) {
   const [isActive, setIsActive] = useState(false);
   const [selected, setSelcted] = useState(false);
@@ -25,20 +25,11 @@ export default function WineCard({
   };
   const select = () => {
     setSelcted(!selected);
-
-
   };
 
   return (
-  
     <article
-      onClick={select}
-      className={`relative flex-col justify-center items-center rounded-lg border-[1px] border-white/30 bg-black transition-transform duration-500    ${
-        selected
-          ? " -translate-y-5"
-          : "translate-y-10" && isActive ? "  -translate-y-5 " : " translate-y-10"
-         
-      } 
+      className={`relative flex-col justify-center items-center rounded-lg border-[1px] border-white/30 bg-black transition-transform duration-500 
      `}
     >
       <div class="  absolute -top-10 left-0 mr-24  ">
@@ -71,14 +62,20 @@ export default function WineCard({
         } flex flex-col gap-y-2 px-8 mt-9 mb-6 text-pretty`}
       >
         <div className="flex gap-x-2 items-center">
-          <p className="font-bold opacity-90">Entradas:</p> <a class=" recomendaciones opacity-80" href="#">{entradas}</a>
+          <p className="font-bold opacity-90">Entradas:</p>{" "}
+          <a class=" recomendaciones opacity-80" href="#">
+            {entradas}
+          </a>
         </div>
         <div className="flex gap-x-2 items-center">
-          <p className="font-bold opacity-90">Carne:</p> <a class=" recomendaciones opacity-80" href="#">{carne}</a>
+          <p className="font-bold opacity-90">Carne:</p>{" "}
+          <a class=" recomendaciones opacity-80" href="#">
+            {carne}
+          </a>
         </div>
         <div>
           <p class="text-sm opacity-80">
-            una pequeña descripcion acerca de las carectersisticas del vino 
+            una pequeña descripcion acerca de las carectersisticas del vino
           </p>
         </div>
       </div>

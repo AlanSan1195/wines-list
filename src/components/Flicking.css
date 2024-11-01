@@ -1,0 +1,31 @@
+.embuelve{
+    background-color: red;
+    height: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor {
+ 
+
+    background-color: blue;
+    height: auto;
+    width: 70px;
+    overflow-y: hidden;
+
+   
+}
+.contenido{
+    background-color: green;
+    height: 30px;
+    width: 50px;
+    margin: 3px 0px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+}
