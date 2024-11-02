@@ -2,8 +2,7 @@ import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
 import { getCollection } from "astro:content";
 import WineCard from "./WineCard.jsx";
-
-// Or, if you have to support IE9
+import { useState } from "react";
 
 const wines = await getCollection("wines");
 
@@ -12,7 +11,7 @@ const FlickingComponent = () => (
     className="  w-screen mb-28 "
     circularFallback={true}
     circular={false}
-    duration={100}
+    duration={500}
     moveType="freeScroll"
     align="prev"
   >
@@ -30,10 +29,7 @@ const FlickingComponent = () => (
       } = data;
 
       return (
-        <div
-          id="slider"
-          class=" p-4 min-w-96 max-w-min   mt-14 flex   "
-        >
+        <div key={slug} className=" p-4 min-w-96 max-w-min   mt-14 flex   ">
           <WineCard
             client:load
             index={slug}
