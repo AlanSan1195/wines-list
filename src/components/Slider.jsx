@@ -14,6 +14,9 @@ const FlickingComponent = () => (
     duration={500}
     moveType="freeScroll"
     align="prev"
+    
+
+    
   >
     {wines.map((wine) => {
       const { slug, data } = wine;
