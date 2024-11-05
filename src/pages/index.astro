@@ -1,48 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getCollection } from "astro:content";
-import WineCard from "../components/WineCard.jsx";
-import Flicking from "@egjs/react-flicking";
-import "../components/Flicking.css";
-import Slider from "../components/Slider.jsx";
+import SliderEspeciasls from "../components/SliderEspecials.jsx";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
 
-const wines = await getCollection("wines");
-console.log(wines);
+
+
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="flex justify-center mt-8">
-    <div class="flex flex-col items-center">
-      <a class="h-20 md:h-36 mb-5" href="https://www.lamatera.online/">
-        <img
-          class="h-20 md:h-36 mb-5"
-          src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo-rojo.svg"
-          alt="logo de la matera"
-        />
-      </a>
-      <h1 class="text-center text-3xl font-bold font-serif opacity-80">
-        Especiales
-      </h1>
-      <div class="flex items-center justify-center">
-        <p
-          class="text-center mx-5 mt-4 text-sm max-w-[400px] font-serif opacity-80 text-pretty"
-        >
-          Te presentamos una selección especial de vinos recomendados por
-          nuestro sommelier, este mes conoceremos la <span
-            class="text-red-500"
-          >
-            línea Zuccardi,</span
-          > una bodega de renombre que destaca por su pasión y dedicación en cada
-          botella.
-        </p>
-      </div>
-    </div>
+  <Header />
+  <main class="flex flex-col justify-center text-white">
+    <SliderEspeciasls client:load />
+    <Hero/>
   </main>
-  <Slider client:load  /> 
-
-
-
-
-  
-
 </Layout>
