@@ -21,7 +21,7 @@ export default function WineCard({
   return (
     <div className=" flex flex-col mt-36 z-10 ">
       <article
-        className={`relative justify-center   items-center rounded-lg border-[1px] border-white/30 bg-black  transition-transform duration-500 text-white   
+        className={`relative maxh justify-center   items-center rounded-lg border-[1px] border-white/30  bg-black/20 backdrop-blur-sm   transition-transform duration-500 text-white   
      `}
       >
         <div className="  absolute -top-10 left-0 mr-24  ">

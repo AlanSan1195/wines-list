@@ -4,7 +4,7 @@ description: "La letra 'Q' en su nombre indica que se trata de un vino de regió
 price: "$2200"
 variedad: "100% Malbec"
 graduation: "13.5%"
-image: "imagenes-vinos/joseZuccardi.webp"
+image: "imagenes-vinos/zuccardiQ.webp"
 entradas: "Provoleta con Tomate"
 carne: "Asado de tira"
 ---
