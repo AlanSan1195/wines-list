@@ -1,10 +1,39 @@
-<header
+
+
+
+<header id="header" 
 class="fixed z-20 flex justify-between px-3 py-4 mb-4 items-center border-b shadow-lg border-white/50 rounded-b-2xl w-full backdrop-blur-md bg-neutral-200/10 text-pretty text-white"
 >
-<h1 class="text-3xl font-bold font-serif  title opacity-80 p-3">Especiales</h1>
+<div class="flex flex-col items-center">  
+
+  <h1 id="Especial" class="  text-3xl font-bold font-serif  title opacity-80 p-3">Especiales</h1>
+  <span id="Copas" class=" hidden text-3xl font-bold font-serif  title opacity-80 p-3">Copeo</span>
+</div>
 <img
   class="h-[54px] w-[54px] hover:cursor-pointer"
   src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo.svg"
   alt="logo de la matera en el header"
 />
 </header>
+
+
+<script>
+
+
+ const header = document.getElementById('header')
+ const especiales = document.getElementById('Especial')
+ const span = document.getElementById('Copas')
+  if (header && span && especiales) {
+    window.addEventListener('scroll', () => {
+      const windowY = window.scrollY
+      if (windowY> 430) {
+        especiales.classList.add('hidden')
+        span.classList.remove('hidden')
+
+      } else {
+        especiales.classList.remove('hidden')
+        span.classList.add('hidden')
+      }
+    })
+  }
+</script>
