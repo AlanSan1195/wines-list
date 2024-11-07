@@ -11,7 +11,7 @@ const FlickingComponent = () => (
     className="  w-screen px-10 py-4  "
     circularFallback={true}
     circular={false}
-    duration={500}
+  
     moveType="freeScroll"
     align="prev"
   
