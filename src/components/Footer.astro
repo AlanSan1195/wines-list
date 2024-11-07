@@ -1,0 +1,172 @@
+---
+import InstagramIcon from "./icons/InstagramIcon.astro";
+import TripadivisorIcon from "./icons/TripadivisorIcon.astro";
+import FacebookIcon from "./icons/FacebookIcon.astro";
+---
+
+<footer class="text-white/80 text-xs md:text-sm p-2 md:hidden my-12">
+  <div class="flex flex-col  p-4  ">
+    <div class="flex flex-col ">
+      <img
+        class="h-16 md:h-35 mb-2"
+        src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo-rojo.svg"
+        alt="logo de la matera"
+      />
+      <p class="font-boldes">Av. México 2895</p>
+      <p>Col. Vallarta Norte C.P 44690</p>
+      <p>Guadalajara, Jalisco, México</p>
+    </div>
+
+    <br />
+
+    <div
+      class="flex flex-row text-start content-start gap-3 md:gap-16 justify-center items-center"
+    >
+      <div class="felx flex-col">
+        <p class="font-bold">Horarios:</p>
+        <p>Lunes a Sábado de 1:00 pm a 12:00 am</p>
+        <p>Domingo de 1:00 pm a 10:30 pm</p>
+      </div>
+      <div class="flex flex-row items-center">
+        <div class="flex  items-center gap-x-4">
+          <div class="flex items-center ">
+            <img
+              class="h-5 mx-2"
+              src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-whatsapplogo.svg"
+              alt="icono watsaap"
+            />
+           
+          </div>
+          <button class=" border-2 border-red-900 hover:scale-75 rounded-lg p-2">
+            <a
+            class="text-boldes   hover:cursor-pointer" href="https://api.whatsapp.com/send/?phone=523318457029&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"
+            >Facturar</a
+          >
+
+          </button>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <nav>
+    <ul
+      class="flex justify-center items-center [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2 opacity-80"
+    >
+      <li>
+        <a
+          href="https://www.tripadvisor.com.mx/Restaurant_Review-g150798-d786318-Reviews-La_Matera-Guadalajara_Guadalajara_Metropolitan_Area.html "
+          aria-label="tripadvisor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TripadivisorIcon class="size-8" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/lamateragdl/?hl=es "
+          aria-label="instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon class="size-6 opacity-80" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.facebook.com/LaMateraGDL?locale=es_LA "
+          aria-label="facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon class="size-7" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <p class=" flex justify-center items-center">© 2024 La Matera Todos los derechos reservados</p>
+</footer>
+
+
+
+
+
+<!-- footer md y lg -->
+
+<div class="md:flex justify-center flex-col text-sm  hidden mt-44 opacity-70 px-8 ">
+  <img
+    class="h-16 md:h-35 mb-2"
+    src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo-rojo.svg"
+    alt="logo de la matera"
+  />
+  <p class="font-boldes">Av. México 2895</p>
+  <p>Col. Vallarta Norte C.P 44690</p>
+  <p>Guadalajara, Jalisco, México</p>
+</div>
+
+<footer class="text-white/80 text-sm  w-full ">
+  <div class="md:flex flex-col hidden px-8 py-4">
+    <p class="font-boldes">Horarios:</p>
+    <p>Lunes a Sábado de 1:00 pm a 12:00 am</p>
+    <p>Domingo de 1:00 pm a 10:30 pm</p>
+  </div>
+  <nav class="md:flex items-center justify-between mx-14 mb-4 hidden ">
+    <div class="flex flex-col items-center">
+     
+      <div class="flex items-center gap-x-6">
+        
+        <img
+          class="h-6 mx-2"
+          src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-whatsapplogo.svg"
+          alt="icono watsaap"
+        />
+        <button class=" border-2 border-red-900 hover:scale-75 rounded-lg p-2">
+          <a
+          class="font-boldes opacity-80  hover:cursor-pointer" href="https://api.whatsapp.com/send/?phone=523313557728&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"
+          >Facturar</a
+        >
+
+        </button>
+     
+      </div>
+    </div>
+    <p class="mr-8 opacity-50">© 2024 La Matera Todos los derechos reservados</p>
+
+    <ul
+      class="flex justify-center items-center [&>li>a]:inline-block [&>li>a]:px-2 "
+    >
+      <li>
+        <a
+          href="https://www.tripadvisor.com.mx/Restaurant_Review-g150798-d786318-Reviews-La_Matera-Guadalajara_Guadalajara_Metropolitan_Area.html "
+          aria-label="tripadvisor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TripadivisorIcon class="size-8" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/lamateragdl/?hl=es "
+          arial-label="instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon class="size-6 opacity-80" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.facebook.com/LaMateraGDL?locale=es_LA " arial-label="facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon class="size-7" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

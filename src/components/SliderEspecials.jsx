@@ -6,8 +6,9 @@ import WineCard from "./WineCard.jsx";
 const winesEspecials = await getCollection("winesEspecials");
 
 const FlickingComponent = () => (
+  
   <Flicking
-    className="  w-screen mb-6 "
+    className="  w-screen px-10 py-4  "
     circularFallback={true}
     circular={false}
     duration={500}
@@ -30,7 +31,7 @@ const FlickingComponent = () => (
 
 
       return (
-        <div key={slug} className="  p-4 min-w-96 max-w-min  text-white   flex ">
+        <div key={slug} className="  p-4 min-w-96 max-w-min  text-white    flex ">
           <WineCard
             client:load
             index={slug}
