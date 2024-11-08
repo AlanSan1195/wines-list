@@ -1,7 +1,7 @@
 ---
 title: "Zuccardi Concreto"
 description: "El Zuccardi Concreto es conocido por su enfoque en la pureza de la uva y su expresión más auténtica del terroir, se caracteriza por su crianza en tanques de concreto, lo que le otorga una mayor frescura y mineralidad"
-price: "$4500"
+price: "$1950"
 variedad: "100% Malbec"
 graduation: "14%"
 image: "imagenes-vinos/zuccardiConcreto.webp"

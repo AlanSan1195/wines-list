@@ -1,14 +1,14 @@
 import "./Buttom.css";
-import { getCollection } from "astro:content";
+
 
 
 export default function ButtomMaridage({
-  vino,
   price,
   entradas,
   carne,
   isActive,
   toggleIsActive,
+  speach
 }) {
 
 
@@ -43,9 +43,9 @@ export default function ButtomMaridage({
           </a>
         </div>
         <div>
-          <p className="text-sm opacity-80">
-            una pequeña descripcion acerca de las carectersisticas del vino
-          </p>
+        {
+          speach && <p className="text-xs opacity-80">{speach}</p>
+        }
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 ---
 title: "Zuccardi Q"
 description: "La letra 'Q' en su nombre indica que se trata de un vino de región, hecho con uvas de viñedos y parcelas cuidadosamente seleccionadas. "
-price: "$2200"
+price: "$1180"
 variedad: "100% Malbec"
 graduation: "13.5%"
 image: "imagenes-vinos/zuccardiQ.webp"

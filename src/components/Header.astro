@@ -7,7 +7,8 @@ class="fixed z-20 flex justify-between px-3 py-4 mb-4 items-center border-b shad
 <div class="flex flex-col items-center">  
 
   <h1 id="Especial" class="  text-3xl font-bold font-serif  title opacity-80 p-3">Especiales</h1>
-  <span id="Copas" class=" hidden text-3xl font-bold font-serif  title opacity-80 p-3">Copeo</span>
+  <span id="Copas" class=" hidden text-3xl font-bold font-serif  title opacity-80 p-3">Copeo Tintos</span>
+  <span id="Copas-Blancos" class=" hidden text-3xl font-bold font-serif  title opacity-80 p-3">Copeo Blancos</span>
 </div>
 <img
   class="h-[54px] w-[54px] hover:cursor-pointer"
@@ -16,24 +17,28 @@ class="fixed z-20 flex justify-between px-3 py-4 mb-4 items-center border-b shad
 />
 </header>
 
-
 <script>
-
-
- const header = document.getElementById('header')
- const especiales = document.getElementById('Especial')
- const span = document.getElementById('Copas')
-  if (header && span && especiales) {
+  const header = document.getElementById('header');
+  const especiales = document.getElementById('Especial');
+  const span = document.getElementById('Copas');
+  const span2 = document.getElementById('Copas-Blancos');
+  
+  if (header && span && especiales && span2) {
     window.addEventListener('scroll', () => {
-      const windowY = window.scrollY
-      if (windowY> 430) {
-        especiales.classList.add('hidden')
-        span.classList.remove('hidden')
-
+      const windowY = window.scrollY;
+      if (windowY > 1000) {
+        especiales.classList.add('hidden');
+        span.classList.add('hidden');
+        span2.classList.remove('hidden');
+      } else if (windowY > 430) {
+        especiales.classList.add('hidden');
+        span.classList.remove('hidden');
+        span2.classList.add('hidden');
       } else {
-        especiales.classList.remove('hidden')
-        span.classList.add('hidden')
+        especiales.classList.remove('hidden');
+        span.classList.add('hidden');
+        span2.classList.add('hidden');
       }
-    })
+    });
   }
 </script>

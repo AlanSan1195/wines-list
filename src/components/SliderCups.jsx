@@ -1,22 +1,22 @@
 import Flicking from "@egjs/react-flicking";
-import "@egjs/react-flicking/dist/flicking.css";
+
 import { getCollection } from "astro:content";
 import WineCard from "./WineCard.jsx";
 
-const winesEspecials = await getCollection("winesEspecials");
-console.log(winesEspecials);
+const winesCups = await getCollection("winesCups");
+console.log(winesCups);
 
 const FlickingComponent = () => (
-  
   <Flicking
-    className="  w-full  py-12"
+    className="  w-full py-4   "
     circular={false}
-  
-    moveType="freeScroll"
+    circularFallback={"linear"}
+
+
     align="prev"
   
   >
-    {winesEspecials.map((wine) => {
+    {winesCups.map((wine) => {
       const { slug, data } = wine;
       const {
         title,
@@ -27,8 +27,8 @@ const FlickingComponent = () => (
         image,
         entradas,
         carne,
+        speach
       } = data;
-
 
       return (
         <div key={slug} className="  p-4 min-w-96 max-w-min  text-white    flex ">
@@ -43,7 +43,7 @@ const FlickingComponent = () => (
             image={image}
             entradas={entradas}
             carne={carne}
-
+            speach={speach}
           />
         </div>
       );

@@ -11,6 +11,7 @@ export default function WineCard({
   entradas,
   carne,
   index,
+  speach
 }) {
   const [isActive, setIsActive] = useState(false);
   const toggleIsActive = () => {
@@ -52,6 +53,7 @@ export default function WineCard({
           vino={title}
           entradas={entradas}
           carne={carne}
+          speach={speach}
         />
       </article>
     </div>
