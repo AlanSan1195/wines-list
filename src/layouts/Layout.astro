@@ -10,16 +10,22 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="Vinos de argentina, la mejor cava de vinos de Guadalajara, disfruta de un buen maridaje y un buen corte a la parrilla con uno de nuestros vinos especiales del mes."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo.svg"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <div class="relative h-full w-full bg-[#110505]">
       <div
-        class=" fixed bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_400px_at_95%_200px,#3e3e3e,transparent)]"
+        class="fixed bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_400px_at_95%_200px,#3e3e3e,transparent)]"
       >
       </div>
       <slot />
@@ -46,6 +52,5 @@ const { title } = Astro.props;
 
     /* fondo alternativo  */
     /* background: #ebdcbf; */
-   
   </style>
 </html>
