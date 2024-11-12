@@ -1,8 +1,8 @@
 ---
 title: "Kung Fu Girl "
-description: "Kung Fu Girl es un vino blanco vibrante y fresco, originario del estado de Washington, EE. UU. este Riesling se caracteriza por sus notas de frutas de hueso como el durazno y albaricoque, junto con un toque cítrico y mineralidad que le da un final refrescante."
+description: "Kung Fu Girl es un vino blanco vibrante y fresco, originario del estado de Washington, EE. UU. este Riesling se caracteriza por su toque cítrico y mineral que le da un final refrescante."
 price: "$230"
-variedad: "100% Riesling"
+variedad: "Riesling"
 graduation: "12.5%"
 image: "imagenes-vinos/withe-wines/kunfuGirld.webp"
 entradas: "Mejilloes con chistorra"

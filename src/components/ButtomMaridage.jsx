@@ -18,11 +18,11 @@ export default function ButtomMaridage({
 
   return (
     <>
-      <div className="flex justify-between items-center px-6  ">
+      <div className="flex justify-between items-center px-6 text-sm  ">
         <button onClick={toggleIsActive} className={classEnable}>
-          Maridage
+          Maridaje
         </button>
-        <p className="text-xs font-bold opacity-80 ">{price}</p>
+        <p className="text-sm font-bold opacity-80 ">{price}</p>
       </div>
       <div
         id="maridage-div"
@@ -31,20 +31,20 @@ export default function ButtomMaridage({
         } flex flex-col gap-y-2 px-8 mt-9 mb-4  text-pretty`}
       >
         <div className="flex  gap-x-2 items-center">
-          <p className="font-bold opacity-90">Entradas:</p>{" "}
+          <p className="font-bold opacity-90">Entrada:</p>{" "}
           <a className=" recomendaciones opacity-80" href="#">
             {entradas}
           </a>
         </div>
         <div className="flex gap-x-2 items-center">
-          <p className="font-bold opacity-90">Carne:</p>{" "}
+          <p className="font-bold opacity-90">Platillo:</p>{" "}
           <a className=" recomendaciones opacity-80" href="#">
             {carne}
           </a>
         </div>
         <div>
         {
-          speach && <p className="text-xs opacity-80">{speach}</p>
+          speach && <p className="text-xs opacity-60 ">{speach}</p>
         }
         </div>
       </div>

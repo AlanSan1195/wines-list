@@ -1,43 +1,53 @@
-
-
-
-<header id="header" 
-class="fixed z-20 flex justify-between px-3 py-4 mb-4 items-center border-b shadow-lg border-white/50 rounded-b-2xl w-full backdrop-blur-md bg-neutral-200/10 text-pretty text-white"
+<header
+  id="header"
+  class="fixed z-20 flex justify-between px-3 py-4 mb-4 items-center border-b shadow-lg border-white/50 rounded-b-2xl w-full backdrop-blur-md bg-neutral-200/10 text-pretty text-white"
 >
-<div class="flex flex-col items-center">  
-
-  <h1 id="Especial" class="  text-3xl font-bold font-serif  title opacity-80 p-3">Especiales</h1>
-  <span id="Copas" class=" hidden text-3xl font-bold font-serif  title opacity-80 p-3">Copeo Tintos</span>
-  <span id="Copas-Blancos" class=" hidden text-3xl font-bold font-serif  title opacity-80 p-3">Copeo Blancos</span>
-</div>
-<img
-  class="h-[54px] w-[54px] hover:cursor-pointer"
-  src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo.svg"
-  alt="logo de la matera en el header"
-/>
+  <div class="flex flex-col items-center">
+    <div id="Especial" class="p-1">
+      <h1 class="text-3xl font-bold font-serif title opacity-80">Especiales</h1>
+      <p class="text-xs text-center opacity-70 font-serif">
+        únicamente por botella
+      </p>
+    </div>
+    <span
+      id="Copas"
+      class="hidden text-3xl font-bold font-serif title opacity-80 p-3"
+      >Copeo Tintos</span
+    >
+    <span
+      id="Copas-Blancos"
+      class="hidden text-3xl font-bold font-serif title opacity-80 p-3"
+      >Copeo Blancos</span
+    >
+  </div>
+  <img
+    class="h-[54px] w-[54px] hover:cursor-pointer"
+    src="https://www.lamatera.mx/wp-content/themes/bmx-lamatera/assets/img-logotipo.svg"
+    alt="logo de la matera en el header"
+  />
 </header>
 
 <script>
-  const header = document.getElementById('header');
-  const especiales = document.getElementById('Especial');
-  const span = document.getElementById('Copas');
-  const span2 = document.getElementById('Copas-Blancos');
-  
+  const header = document.getElementById("header");
+  const especiales = document.getElementById("Especial");
+  const span = document.getElementById("Copas");
+  const span2 = document.getElementById("Copas-Blancos");
+
   if (header && span && especiales && span2) {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const windowY = window.scrollY;
-      if (windowY > 1000) {
-        especiales.classList.add('hidden');
-        span.classList.add('hidden');
-        span2.classList.remove('hidden');
-      } else if (windowY > 430) {
-        especiales.classList.add('hidden');
-        span.classList.remove('hidden');
-        span2.classList.add('hidden');
+      if (windowY > 1080) {
+        especiales.classList.add("hidden");
+        span.classList.add("hidden");
+        span2.classList.remove("hidden");
+      } else if (windowY > 550) {
+        especiales.classList.add("hidden");
+        span.classList.remove("hidden");
+        span2.classList.add("hidden");
       } else {
-        especiales.classList.remove('hidden');
-        span.classList.add('hidden');
-        span2.classList.add('hidden');
+        especiales.classList.remove("hidden");
+        span.classList.add("hidden");
+        span2.classList.add("hidden");
       }
     });
   }

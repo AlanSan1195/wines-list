@@ -2,7 +2,7 @@
 title: "Xolo"
 description: " De Valle de Guadalupe. Este blend ofrece notas de frutas negras maduras, toques de especias y taninos bien integrados, logrando un equilibrio entre potencia y suavidad."
 price: "$250"
-variedad: "Blend: Nebbiolo, Cabernet Sauvignon"
+variedad: " Nebbiolo, Cabernet Sauvignon"
 graduation: "13.8%"
 image: "imagenes-vinos/xolo.webp"
 entradas: "Hongos al ajillo "

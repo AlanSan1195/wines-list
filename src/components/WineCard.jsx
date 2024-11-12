@@ -1,4 +1,7 @@
 import ButtomMaridage from "./ButtomMaridage.jsx";
+import Grapes from "./icons/Grapes.jsx";
+import Porcetage from "./icons/porcetage.jsx";
+
 import { useState } from "react";
 
 export default function WineCard({
@@ -11,7 +14,7 @@ export default function WineCard({
   entradas,
   carne,
   index,
-  speach
+  speach,
 }) {
   const [isActive, setIsActive] = useState(false);
   const toggleIsActive = () => {
@@ -32,18 +35,27 @@ export default function WineCard({
             className=" h-52 w-auto wine-card-div bg-zin-400/30"
           />
         </div>
-        <div className=" ml-[105px]  flex flex-col gap-y-1  px-2 my-3 text-pretty min-h-[230px]       ">
+        <div className=" ml-[95px]  flex flex-col gap-y-2  px-2 my-3 text-pretty min-h-[230px]       ">
           <h2 className=" font-bold text-xl opacity-80 mt-4 mb-2">{title}</h2>
 
-          <p className=" opacity-80 text-sm mb-2">{description}</p>
-          <p className=" font-semibold text-xs opacity-90">
-            Composicion:{" "}
-            <span className=" font-normal opacity-80">{variedad}</span>
-          </p>
-          <p className="font-semibold text-xs mb-4 opacity-80">
-            Graduacion alcoholica:{" "}
-            <span className=" font-normal opacity-80">{graduation}</span>
-          </p>
+          <p className=" opacity-80 text-sm mb-2 ">{description}</p>
+          <div className=" flex flex-col gap-y-3 ">
+            <div className=" flex felx-row items-center  ">
+              <Grapes />
+              <span className=" font-xs opacity-60  text-sm ">{variedad}</span>
+            </div>
+            <div className="flex felx-row items-center ml-1 ">
+              <Porcetage />
+              <span className=" font-xs opacity-60  text-sm ">
+                {graduation}
+              </span>
+            </div>
+          </div>
+
+          {/* <p className="font-semibold text-xs mb-4 opacity-80 ">
+            Graduación alcoholica:{" "}
+            <span className=" font-normal opacity-60 ">{graduation}</span>
+          </p> */}
         </div>
         <ButtomMaridage
           client:load

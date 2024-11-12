@@ -7,14 +7,11 @@ const winesEspecials = await getCollection("winesEspecials");
 console.log(winesEspecials);
 
 const FlickingComponent = () => (
-  
   <Flicking
-    className="  w-full  py-12"
+    className="  w-full py-4   "
     circular={false}
-  
-    moveType="freeScroll"
+    circularFallback={"linear"}
     align="prev"
-  
   >
     {winesEspecials.map((wine) => {
       const { slug, data } = wine;
@@ -27,11 +24,14 @@ const FlickingComponent = () => (
         image,
         entradas,
         carne,
+        speach,
       } = data;
 
-
       return (
-        <div key={slug} className="  p-4 min-w-96 max-w-min  text-white    flex ">
+        <div
+          key={slug}
+          className="  p-4 min-w-96 max-w-min  text-white    flex "
+        >
           <WineCard
             client:load
             index={slug}
@@ -43,7 +43,7 @@ const FlickingComponent = () => (
             image={image}
             entradas={entradas}
             carne={carne}
-
+            speach={speach}
           />
         </div>
       );
